@@ -107,3 +107,42 @@ button[type="submit"]:hover {
     border-radius: 4px;
     display: none; /* Hide it initially */
 }
+
+/* === RESPONSIVE DESIGN FOR MOBILE === */
+
+/* This media query applies styles only when the browser window is 600px wide or less */
+@media (max-width: 600px) {
+    
+    body {
+        padding: 10px; /* A little less padding on small screens */
+    }
+
+    .container {
+        padding: 20px; /* Less padding inside the container */
+    }
+
+    /* The most important change: stack the header items vertically */
+    .header {
+        flex-direction: column; /* Change from a row to a column */
+        text-align: center;     /* Center all the text inside */
+        gap: 15px;              /* Reduce the gap between items */
+    }
+
+    /* Make the profile image a bit smaller on mobile */
+    .header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Make the main heading a bit smaller on mobile */
+    h1 {
+        font-size: 24px;
+    }
+
+    /* Ensure the form inputs don't get too wide */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
