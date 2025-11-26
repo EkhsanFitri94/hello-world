@@ -48,3 +48,19 @@ a:hover {
     text-decoration: underline;     /* Adds the underline back when you hover over it */
     color: #0056b3;                 /* Darkens the link on hover */
 }
+
+/* === HEADER LAYOUT WITH FLEXBOX === */
+
+.header {
+    display: flex;               /* This is the magic! Turns the header into a flex container. */
+    align-items: center;         /* Vertically aligns items in the center. */
+    gap: 30px;                   /* Adds 30px of space between the flex items (image and text). */
+    margin-bottom: 30px;         /* Adds space below the header section. */
+}
+
+/* Let's adjust the image for the new layout */
+.header img {
+    width: 150px;                /* Make the image a bit smaller for the header */
+    height: 150px;
+    flex-shrink: 0;              /* Prevents the image from shrinking if the container is too small */
+}
