@@ -1,0 +1,50 @@
+/* === GENERAL STYLES === */
+/* This targets the whole page body */
+
+body {
+    font-family: Arial, sans-serif; /* A clean, modern font */
+    background-color: #f4f4f4;      /* A light grey background */
+    color: #333;                    /* A dark grey for text (easier on the eyes than pure black) */
+    line-height: 1.6;               /* Adds space between lines of text */
+    margin: 0;                      /* Removes default browser margin */
+    padding: 20px;                  /* Adds some space around the content */
+}
+
+/* === CONTAINER === */
+/* We'll wrap our content in a container to center it */
+.container {
+    max-width: 800px;               /* Limits the width on large screens */
+    margin: 0 auto;                 /* This magically centers the container */
+    background-color: #fff;         /* A white background for the content area */
+    padding: 30px;                  /* More padding inside the container */
+    border-radius: 8px;             /* Rounds the corners */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+}
+
+/* === TYPOGRAPHY === */
+h1, h2, h3 {
+    color: #0056b3;                 /* A nice blue for headings */
+}
+
+h1 {
+    text-align: center;             /* Centers the main heading */
+}
+
+/* === IMAGE === */
+img {
+    display: block;                 /* Allows us to apply margin auto */
+    margin: 20px auto;              /* Centers the image horizontally */
+    border-radius: 50%;             /* Makes the image a circle! */
+    border: 5px solid #0056b3;      /* Adds a blue border */
+}
+
+/* === LINK === */
+a {
+    color: #007bff;                 /* A bright blue for links */   
+    text-decoration: none;           /* Removes the underline */
+}
+
+a:hover {
+    text-decoration: underline;     /* Adds the underline back when you hover over it */
+    color: #0056b3;                 /* Darkens the link on hover */
+}
